@@ -4,10 +4,14 @@
 # Difficulty: easy.
 
 def sum_nums(num)
+	(1..num).inject {|sum,num| sum +num}
+
 end
 
 # These are tests to check that your code is working. After writing
 # your solution, they should all print true.
+
+# puts sum_nums(4)
 
 puts('sum_nums(1) == 1: ' + (sum_nums(1) == 1).to_s)
 puts('sum_nums(2) == 3: ' + (sum_nums(2) == 3).to_s)
