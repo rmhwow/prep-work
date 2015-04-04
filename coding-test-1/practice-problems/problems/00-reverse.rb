@@ -6,10 +6,15 @@
 # Difficulty: easy.
 
 def reverse(string)
+	word = string.split('')
+	word.sort! {|x,y| y <=> x}
+	word.join
 end
 
 # These are tests to check that your code is working. After writing
 # your solution, they should all print true.
+
+p reverse("cow")
 
 puts(
   'reverse("abc") == "cba": ' + (reverse("abc") == "cba").to_s
