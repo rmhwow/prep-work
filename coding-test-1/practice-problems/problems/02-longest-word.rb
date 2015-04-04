@@ -7,10 +7,13 @@
 # Difficulty: easy.
 
 def longest_word(sentence)
+	words =sentence.split()
+	words.group_by(&:size).max.last.join
 end
 
 # These are tests to check that your code is working. After writing
 # your solution, they should all print true.
+
 
 puts(
   'longest_word("short longest") == "longest": ' +
