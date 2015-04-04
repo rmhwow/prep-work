@@ -5,6 +5,8 @@
 # Difficulty: easy.
 
 def count_vowels(string)
+	word = string.split('')
+	word.keep_if {|letter| letter =~ /[aeiou]/}.length
 end
 
 # These are tests to check that your code is working. After writing
